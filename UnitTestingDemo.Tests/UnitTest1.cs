@@ -1,8 +1,13 @@
 ﻿using System;
-namespace UnitTestingExercise
+using Xunit;
+
+namespace UnitTestingDemo.Tests
 {
-    public class UnitTestMethods
+    public class UnitTest1
     {
+        
+        
+        
         // Make sure your references are set properly
         // Righ-click on Dependencies in your .Tests project and set your reference
 
@@ -24,7 +29,7 @@ namespace UnitTestingExercise
         // Create a Subtract method that passes 2 integers
         // Keep track of which number is getting passed as minuend and subtrahend
 
-        public int Sub(int x, int y) 
+        public int Sub(int x, int y)
 
         {
             return x - y;
@@ -41,11 +46,6 @@ namespace UnitTestingExercise
             return x * b;
         }
 
-        public object Subtract(int minuend, int subtrhend, int expected)
-        {
-            throw new NotImplementedException();
-        }
-
 
         // Create a Divide method that passes 2 integers
         public int Div(int b, int x)
@@ -56,20 +56,7 @@ namespace UnitTestingExercise
 
 
         // Create 2 methods that will utilize the [Fact] tests you wrote
-        public string Hello()
 
-        {
-            return $"Hello"; 
-
-         }
-        public string HelloWorld ()
-        {
-            return $"Hello World";
-        }
-
-        
-        
-
-
-    }
+       
+    } 
 }
